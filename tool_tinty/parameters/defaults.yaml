@@ -1,0 +1,31 @@
+# vim: ft=yaml
+#
+# Set default values.
+---
+values:
+  lookup:
+    pkg:
+      name: tinty
+    paths:
+      confdir: '.config/tinted-theming/tinty/'
+      conffile: 'config.toml'
+      xdg_dirname: 'tinted-theming/tinty'
+      xdg_conffile: 'config.toml'
+      bin_dir: /usr/local/bin
+      install_dir: /opt/uv/release
+    rootgroup: root
+    pkg_src:
+      latest: https://github.com/tinted-theming/tinty/releases/latest
+      source: https://github.com/tinted-theming/tinty/releases/download/v{version}/tinty-{arch}-{typ}-{kernel_libc}.tar.gz  # yamllint disable-line rule:line-length
+      source_hash: https://github.com/tinted-theming/tinty/releases/download/v{version}/tinty-{arch}-{typ}-{kernel_libc}.tar.gz.sha256  # yamllint disable-line rule:line-length
+  install_method: releases
+  tofs:
+    files_switch:
+      - G@id|U@users
+      - id
+      - C@roles|U@users
+      - roles
+      - G@os_family|U@users
+      - os_family
+      - U@users
+...
