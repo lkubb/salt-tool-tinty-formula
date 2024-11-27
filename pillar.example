@@ -100,7 +100,7 @@ tool_tinty:
     pkg_src:
       latest: https://github.com/tinted-theming/tinty/releases/latest
       source: https://github.com/tinted-theming/tinty/releases/download/v{version}/tinty-{arch}-{typ}-{kernel_libc}.tar.gz  # yamllint disable-line rule:line-length
-      source_hash: https://github.com/tinted-theming/tinty/releases/download/v{version}/tinty-{arch}-{typ}-{kernel_libc}.tar.gz.sha256  # yamllint disable-line rule:line-length
+      source_hash: https://github.com/tinted-theming/tinty/releases/download/v{version}/tinty-{arch}-{typ}-{kernel_libc}.sha256  # yamllint disable-line rule:line-length
 
 ######################################################################
 # The following settings influence which source paths are considered

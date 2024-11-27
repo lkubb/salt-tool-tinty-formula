@@ -21,7 +21,7 @@ lookup:
   pkg_src:
     latest: https://github.com/tinted-theming/tinty/releases/latest
     source: https://github.com/tinted-theming/tinty/releases/download/v{version}/tinty-{arch}-{typ}-{kernel_libc}.tar.gz
-    source_hash: https://github.com/tinted-theming/tinty/releases/download/v{version}/tinty-{arch}-{typ}-{kernel_libc}.tar.gz.sha256
+    source_hash: https://github.com/tinted-theming/tinty/releases/download/v{version}/tinty-{arch}-{typ}-{kernel_libc}.sha256
 mac_cask: false
 mac_library: false
 needs_repo: false
