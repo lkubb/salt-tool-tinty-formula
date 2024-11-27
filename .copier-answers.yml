@@ -17,7 +17,7 @@ has_xdg: true
 lookup:
   paths:
     bin_dir: /usr/local/bin
-    install_dir: /opt/uv/release
+    install_dir: /opt/tinty/release
   pkg_src:
     latest: https://github.com/tinted-theming/tinty/releases/latest
     source: https://github.com/tinted-theming/tinty/releases/download/v{version}/tinty-{arch}-{typ}-{kernel_libc}.tar.gz

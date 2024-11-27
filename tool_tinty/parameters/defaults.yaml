@@ -12,7 +12,7 @@ values:
       xdg_dirname: 'tinted-theming/tinty'
       xdg_conffile: 'config.toml'
       bin_dir: /usr/local/bin
-      install_dir: /opt/uv/release
+      install_dir: /opt/tinty/release
     rootgroup: root
     pkg_src:
       latest: https://github.com/tinted-theming/tinty/releases/latest
