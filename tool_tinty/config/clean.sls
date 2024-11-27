@@ -13,6 +13,9 @@
 Tinty config file is cleaned for user '{{ user.name }}':
   file.absent:
     - name: {{ user["_tinty"].conffile }}
+{%- endfor %}
+
+{%- for user in tinty.users | selectattr("dotconfig", "defined") | selectattr("dotconfig") %}
 
 Tinty config dir is absent for user '{{ user.name }}':
   file.absent:
