@@ -37,4 +37,9 @@ Tinty configuration is synced for user '{{ user.name }}':
     - dir_mode: '{{ dotconfig.get("dir_mode", "0700") }}'
     - clean: {{ dotconfig.get("clean", false) | to_bool }}
     - makedirs: true
+  cmd.run:
+    - name: tinty sync
+    - runas: {{ user.name }}
+    - onchanges:
+      - file: {{ user["_tinty"].confdir }}
 {%- endfor %}

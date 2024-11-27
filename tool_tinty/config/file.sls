@@ -27,4 +27,9 @@ Tinty config file is managed for user '{{ user.name }}':
     - dataset: {{ user.tinty.config | json }}
     - require:
       - sls: {{ sls_package_install }}
+  cmd.run:
+    - name: tinty sync
+    - runas: {{ user.name }}
+    - onchanges:
+      - file: {{ user["_tinty"].conffile }}
 {%- endfor %}
